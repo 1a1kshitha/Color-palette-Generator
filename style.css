@@ -1,0 +1,44 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rosybrown;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1 rem;
+    background-color: silver;
+    color: brown;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.palette {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.color-block {
+    height: 150px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.color-block:hover {
+    transform: scale(1.05);
+}
